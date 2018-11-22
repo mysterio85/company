@@ -1,0 +1,18 @@
+sonata_admin:
+    title: 'Test Keyops'
+    dashboard:
+        blocks:
+            - { type: sonata.admin.block.admin_list, position: top, class: col-md-12 }
+
+    templates:
+        search: '@SonataAdmin/Core/search.html.twig'
+        search_result_block: '@SonataAdmin/Block/block_search_result.html.twig'
+
+
+
+sonata_block:
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+        sonata.admin.block.search_result:
+            contexts: [admin]
